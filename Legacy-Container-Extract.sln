@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Legacy-Container-Extract", "Legacy-Container-Extract\Legacy-Container-Extract.csproj", "{FF5C2474-A0C3-4D16-955F-EC1CDB81A599}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF5C2474-A0C3-4D16-955F-EC1CDB81A599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5C2474-A0C3-4D16-955F-EC1CDB81A599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5C2474-A0C3-4D16-955F-EC1CDB81A599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5C2474-A0C3-4D16-955F-EC1CDB81A599}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B257149C-109C-4079-985E-46D432C18A4F}
+	EndGlobalSection
+EndGlobal
