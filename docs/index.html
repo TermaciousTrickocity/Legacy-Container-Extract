@@ -185,14 +185,17 @@
           "scnc": { type: "Screenshots", ext: ".jpg" }
         };
 
-        if (!(headerType in typeMap)) return;
+        if (!(headerType in typeMap)) {
+          output.innerText += `\nValid header not found, skipping: ${file.name}...\n `;
+          return;
+        }
 
         output.innerText += `\nFile: ${file.name}
-Creator: ${creatorName} (XUID: ${creatorXUID})
-Modifier: ${modifierName} (XUID: ${modifierXUID})
-Content: ${content}
-Description: ${description}
-Header Type: ${headerType}\n`;
+        Creator: ${creatorName} (XUID: ${creatorXUID})
+        Modifier: ${modifierName} (XUID: ${modifierXUID})
+        Content: ${content}
+        Description: ${description}
+        Header Type: ${headerType}\n`;
 
         if (headerType === "scnc") {
           const jpgStartMarker = [0xFF, 0xD8, 0xFF, 0xE0];
