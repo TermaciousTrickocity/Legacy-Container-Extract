@@ -167,7 +167,10 @@
 
         const fileContent = new TextDecoder("ascii").decode(bytes);
         const blfIndex = fileContent.indexOf("_blf");
-        if (blfIndex === -1) return;
+        if (blfIndex === -1){
+          output.innerText += `\nValid header not found, skipping: ${file.name}...\n `;
+          return;
+        } 
 
         const content = getString(bytes, 0xD0C0, 0x7F);
         const sanitizedContent = sanitizeFilename(content);
